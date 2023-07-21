@@ -7,31 +7,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="CSS/common.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <section id="rules">
     <h2>Rules</h2>
+
     <ul>
-        <li>Scissors beats Paper</li>
-        <li>Paper beats Rock</li>
-        <li>Rock beats Scissors</li>
+        <li><p class="fire">Fire</p><p>beats</p><p class="grass">Grass</p></li>
+        <li><p class="grass">Grass</p><p>beats</p> <p class="water">Water</p></li>
+        <li><p class="water">Water</p><p>beats</p> <p class="fire">Fire</p></li>
     </ul>
+</section>
+
+<section id="graphics">
+    <img src="IMG/player.svg" alt="" id="player">
+    <img src="IMG/empty.svg" alt="" class="choice">
+    <p>vs</p>
+    <img src="IMG/empty.svg" alt="" class="choice">
+    <img src="IMG/bot.svg" alt="" id="bot">
 </section>
 
 <section id="result">
-    <label>
-        <input type="text" readonly value="select an option">
-    </label>
+    <p>select an option</p>
 </section>
 
 <section id="choices">
-    <ul>
-        <li><button type="submit">Rock</button></li>
-        <li><button type="submit">Paper</button></li>
-        <li><button type="submit">Scissors</button></li>
-    </ul>
-
+    <button type="submit" id="fire"><img src="IMG/fire.svg" alt="rock" ></button>
+    <button type="submit" id="grass"><img src="IMG/grass.svg" alt="paper" ></button>
+    <button type="submit" id="water"><img src="IMG/water.svg" alt="scissors" ></button>
 </section>
 
 </body>

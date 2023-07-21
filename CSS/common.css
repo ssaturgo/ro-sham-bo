@@ -1,4 +1,9 @@
 :root {
+    --fire-color : #ee6a5b;
+    --grass-color : #9cc63e;
+    --water-color : #58c1ee;
+
+    --bg-color: #white;
 }
 
 * {
@@ -15,41 +20,102 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
+    gap: 1rem;
+    background-color: var(--bg-color);
+
+    font-family: 'Pangolin', cursive;
 }
 
+/* ------------ Rules --------------*/
 #rules {
     text-align: center;
-    padding: 1rem;
 }
 #rules ul {
     list-style: none;
 }
+#rules li {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1rem;
+}
+#rules p {
+    width: 2rem;
+}
+.fire {color: var(--fire-color);}
+.grass {color: var(--grass-color);}
+.water {color: var(--water-color);}
 
+/* --------- Graphics -------------*/
+#graphics {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+#graphics .choice {
+    height: 2rem;
+}
+
+#graphics img {
+    height: 3rem;
+}
+
+/* ----------- Result -------------*/
 #result {
     display: flex;
     justify-content: center;
     padding: 1rem;
-}
-#result input {
-    width: 20rem;
-    height: 2rem;
-    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+    border: 2px #e5e5e5 dashed;
+    height: 0.5rem;
+    width: 270px;
+
+    border-radius: 2rem;
 }
 
+/* --------- Choices ------------*/
 #choices {
-    padding: 1rem;
-}
-#choices ul{
+    margin: 0 auto;
+    gap: 2rem;
+
     display: flex;
     flex-direction: row;
-    list-style: none;
-    justify-content: center;
-    gap: 1rem;
 }
-
+#choices img {
+    height: 3rem;
+    width: 3rem;
+}
 #choices button {
     width: 5rem;
-    height: 2rem;
+    height: 5rem;
+    background-color: rgba(0,0,0,0);
+    border-color: #e5e5e5;
+    border-radius: 1rem;
+    border-width: 2px;
+    border-style: solid;
+}
+#choices #fire:hover {
+    border-color: #f69c9e;
+}
+#choices #grass:hover {
+    border-color: #97e3c2;
+}
+#choices #water:hover {
+    border-color: #99c3ec;
+}
+
+#choices #fire:active {
+    background-color: #f69c9e;
+}
+#choices #grass:active {
+    background-color: #97e3c2;
+}
+#choices #water:active {
+    background-color: #99c3ec;
 }
