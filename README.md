@@ -1,5 +1,5 @@
 # Ro-Sham-Bo
-[Live Demo]()<br>
+[Live Demo](https://ssaturgo.github.io/ro-sham-bo/)<br>
 a Rock-Paper-Scissors game made with HTML/CSS/JavaScript where you play against the computer
 
 # What I learned
