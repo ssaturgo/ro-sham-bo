@@ -1,4 +1,4 @@
-# Magical Ro-Sham-Bo
+# Ro-Sham-Bo
 [Live Demo]()<br>
 a Rock-Paper-Scissors game made with HTML/CSS/JavaScript where you play against the computer
 
