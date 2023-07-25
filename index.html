@@ -5,10 +5,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Rock Paper Scissors</title>
+    <title>Ro-Sham-Bo</title>
     <link rel="stylesheet" href="CSS/common.css">
-
     <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <script src="script-main.js"></script>
 </head>
 <body>
 
@@ -16,28 +16,31 @@
     <h2>Rules</h2>
 
     <ul>
-        <li><p class="fire">Fire</p><p>beats</p><p class="grass">Grass</p></li>
-        <li><p class="grass">Grass</p><p>beats</p> <p class="water">Water</p></li>
-        <li><p class="water">Water</p><p>beats</p> <p class="fire">Fire</p></li>
+        <li><p>Rock</p><p>beats</p><p>Scissors</p></li>
+        <li><p>Paper</p><p>beats</p><p>Rock</p></li>
+        <li><p>Scissors</p><p>beats</p><p >Paper</p></li>
     </ul>
 </section>
 
 <section id="graphics">
     <img src="IMG/player.svg" alt="" id="player">
-    <img src="IMG/empty.svg" alt="" class="choice">
+    <img src="" alt="" class="choice" id="player-choice">
     <p>vs</p>
-    <img src="IMG/empty.svg" alt="" class="choice">
+    <img src="" alt="" class="choice" id="bot-choice">
     <img src="IMG/bot.svg" alt="" id="bot">
 </section>
 
 <section id="result">
-    <p>select an option</p>
+    <p id="result-text">select an option</p>
 </section>
 
 <section id="choices">
-    <button type="submit" id="fire"><img src="IMG/fire.svg" alt="rock" ></button>
-    <button type="submit" id="grass"><img src="IMG/grass.svg" alt="paper" ></button>
-    <button type="submit" id="water"><img src="IMG/water.svg" alt="scissors" ></button>
+    <button type="submit" value=0 onclick="submitChoice(this.value)">
+        <img src="IMG/rock.svg" alt="rock" ></button>
+    <button type="submit" value=1 onclick="submitChoice(this.value)">
+        <img src="IMG/paper.svg" alt="paper" ></button>
+    <button type="submit" value=2 onclick="submitChoice(this.value)">
+        <img src="IMG/scissors.svg" alt="scissors" ></button>
 </section>
 
 </body>
